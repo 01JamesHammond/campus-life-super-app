@@ -12,12 +12,6 @@
         center: centerCoords,
         zoom: 8,
       });
-
-      new google.maps.Marker({
-        position: centerCoords,
-        map: map,
-        title: "Campus Center",
-      });
     }
 
 initMap();

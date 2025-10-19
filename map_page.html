@@ -9,10 +9,10 @@
     <link rel="stylesheet" href ="./style.css">
 
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaOnaJwUK9pDrwjrmE-llyAaE0YHS06CM&callback=initMap&v=weekly"
-        defer>
-    </script>
+<script
+  async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaOnaJwUK9pDrwjrmE-llyAaE0YHS06CM&libraries=maps,marker&v=beta">
+</script>
 </head>
 <body>
 
@@ -60,7 +60,15 @@
             </div>        
             
             <div class="information-card-body card-body">
-                <div id="map">MAP</div>
+                <div id="map">
+                <gmp-map center="-34.397,150.644" zoom="10" map-id="DEMO_MAP_ID">
+
+                    <gmp-advanced-marker position="-34.397, 150.644" title="Bondi Beach">
+                        <img class="flag-icon"
+                        src="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"/>
+                    </gmp-advanced-marker>
+                    </gmp-map>
+                </div>
             </div>              
 
         </div>

@@ -13,3 +13,34 @@ nav{
 .information-card-body{
     background-color: #FAEDB7;
 }
+
+
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      height: 400px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
